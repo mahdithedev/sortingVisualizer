@@ -2,7 +2,6 @@ import React, { useState , useEffect } from 'react'
 import './App.css';
 import { Bar } from './Bar';
 import boubleSort from './sortFunctions/boublesort';
-import quickSort  from './sortFunctions/quickSort';
      
 function App() {
 
@@ -24,8 +23,6 @@ function App() {
 
       
       await setBars([...array])
-      console.clear()
-      console.log(bars)
       
   }
 
@@ -67,9 +64,7 @@ function App() {
   }
 
   useEffect(() => {
-      
        genrate(50)
-
     }, [])
 
   return (
